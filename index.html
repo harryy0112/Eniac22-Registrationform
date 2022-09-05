@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/jpg" href="img/logo.png" />
+  <title>ENIAC'22 Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="manifest" href="/assets/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form action="index.html" autocomplete="off" class="sign-in-form">
+            <div class="heading">
+              <h2>ENIAC'22</h2>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" name="name" class="input-field" id="name" autocomplete="off">
+                <label for="">Name<span class="required">*</span></label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="text" name="StdNo" class="input-field" autocomplete="off">
+                <label for="">Student No.<span class="required">*</span></label>
+              </div>
+
+              <div class="input-wrap">
+                <select name="branch" class="input-field" autocomplete="off" required>
+                  <option value="" disabled selected hidden>Branch<span class="required">*</span></option>
+                  <option value="CSE">CSE</option>
+                  <option value="CS">CS</option>
+                  <option value="CSE(AI&ML)">CSE(AI&ML)</option>
+                  <option value="CS(DS)">CS(DS)</option>
+                  <option value="IT">IT</option>
+                  <option value="CS&IT">CS&IT</option>
+                  <option value="ECE">ECE</option>
+                  <option value="EN">EN</option>
+                  <option value="ME">ME</option>
+                  <option value="Civil">Civil</option>
+                </select>
+              </div>
+
+              <div class="input-wrap">
+                <select name="section" class="input-field" autocomplete="off" required>
+                  <option value="" disabled selected hidden>Section<span class="required">*</span></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="input-wrap">
+                <input type="email" name="email" class="input-field" id="email" autocomplete="off">
+                <label for="">Email<span class="required">*</span></label>
+              </div>
+
+              <div class="input-wrap">
+                <select name="gender" class="input-field" autocomplete="off" required>
+                  <option value="" disabled selected hidden>Gender<span class="required">*</span></option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="input-wrap">
+                <select name="hostel" class="input-field" autocomplete="off" required>
+                  <option value="" disabled selected hidden>Hosteller<span class="required">*</span></option>
+                  <option value="Male">YES</option>
+                  <option value="Female">NO</option>
+                </select>
+              </div>
+
+              <div class="input-wrap">
+                <input type="text" name="roll" class="input-field" autocomplete="off">
+                <label for="">HackerRank Username<span class="required">*</span></label>
+
+              </div>
+              <button type="submit" class="register-btn" id="btn-submit">Register</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./img/Group.png" class="image img-1 show" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Decode Your Destiny!</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Javascript file -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
