@@ -24,18 +24,21 @@
     <div class="box">
       <div class="inner-box">
         <div class="forms-wrap">
-          <form action="index.html" autocomplete="off" class="sign-in-form">
+          <form action="index.html" autocomplete="off" class="sign-in-form" name="myform"
+            onsubmit="return validateform()" method="post">
             <div class="heading">
               <h2>ENIAC'22</h2>
             </div>
 
             <div class="actual-form">
               <div class="input-wrap">
+                <b><span class="formerror"></span></b>
                 <input type="text" name="name" class="input-field" id="name" autocomplete="off">
                 <label for="">Name<span class="required">*</span></label>
               </div>
 
               <div class="input-wrap">
+                <b><span class="formerror"></span></b>
                 <input type="text" name="StdNo" class="input-field" autocomplete="off">
                 <label for="">Student No.<span class="required">*</span></label>
               </div>
@@ -66,6 +69,7 @@
               </div>
 
               <div class="input-wrap">
+                <b><span class="formerror"></span></b>
                 <input type="email" name="email" class="input-field" id="email" autocomplete="off">
                 <label for="">Email<span class="required">*</span></label>
               </div>
