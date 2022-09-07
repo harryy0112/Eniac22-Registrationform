@@ -28,7 +28,7 @@ main {
   position: relative;
   width: 100%;
   max-width: 1020px;
-  height: 800px;
+  height: 950px;
   background-color: rgb(242, 242, 242);
   border-radius: 3.3rem;
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
@@ -132,12 +132,22 @@ label {
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   transition: 0.3s;
 }
 
 .register-btn:hover {
   background-color: #877eda;
+}
+
+.g-recaptcha {
+  margin: 20px 0px;
+}
+
+.status {
+  font-size: 15px;
+  color: green;
+  padding: 15px;
 }
 
 .carousel {
@@ -237,7 +247,7 @@ label {
 
   form {
     max-width: revert;
-    padding: 1.5rem 2.5rem 2rem;
+    padding: 1.5rem 1.5rem 2rem;
     transition: transform 0.8s ease-in-out, opacity 0.45s linear;
   }
 
@@ -284,7 +294,7 @@ label {
   }
 
   .inner-box {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   .carousel {
