@@ -98,6 +98,10 @@ form {
   color: red;
 }
 
+.formerror {
+  color: red;
+}
+
 label {
   position: absolute;
   left: 0;

@@ -6,6 +6,8 @@
         "Hosteller",
         "myform",
         "seterror",
+        "stdno",
+        "studentno",
         "validateform"
     ]
 }

@@ -1,23 +1,28 @@
 const valName = new RegExp("^[a-zA-Z ]{2,30}$");
 const valEmail = new RegExp("^[a-zA-Z]*20[0-9]{5}@akgec\.ac\.in$");
-const errorCode = ["*Max. 25, Characters Only", "*Use College Email ID"];
+const valStdno = new RegExp("20[0-9]{5}$");
+const errorCode = ["*Max. 25, Characters Only", "*Use College Student No.", "*Use College Email ID"];
 
 function validateForm() {
 
   clearErrors();
   let returnVal = true;
-  const nameError = document.getElementById("name");
-  const emailError = document.getElementById("email");
-  const Name = form['Name'].value;
-  const Email = form['Email'].value;
+  const name = document.forms['myForm']["name"].value;
+  const email = document.forms['myForm']["email"].value;
+  const stdno = document.forms['myForm']["stdno"].value;
 
-  if (!valName.test(Name)) {
-    seterror(nameError[1], errorCode[0]);
+  if (!valName.test(name)) {
+    seterror("name", errorCode[0]);
     returnVal = false;
   }
 
-  if (!valEmail.test(Email)) {
-    seterror(emailError[1], errorCode[1]);
+  if (!valStdno.test(stdno)) {
+    seterror("studentno", errorCode[1]);
+    returnVal = false;
+  }
+
+  if (!valEmail.test(email)) {
+    seterror("email", errorCode[2]);
     returnVal = false;
   }
   return returnVal;
@@ -33,6 +38,10 @@ function clearErrors() {
   for (let item of errors) {
     item.innerHTML = "";
   }
+}
+
+function captchaCb() {
+  document.getElementById("btn-submit").removeAttribute("disabled");
 }
 
 const inputs = document.querySelectorAll(".input-field");
@@ -51,4 +60,10 @@ function moveSlider() {
   let index = this.dataset.value;
   const textSlider = document.querySelector(".text-group");
   textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
+}
+
+function autofillEmail() {
+  const name = document.forms[0].elements[0].value.split(" ")[0].toLowerCase();
+  const stdno = document.forms[0].elements[1].value;
+  document.forms[0].elements[2].value = name + stdno + "@akgec.ac.in";
 }
