@@ -25,8 +25,7 @@
     <div class="box">
 
       <div class="forms-wrap">
-        <form action="index.html" autocomplete="off" class="sign-in-form" name="myform" onsubmit="return validateform()"
-          method="post">
+        <form action="/register" class="sign-in-form" name="myform" onsubmit="return validateform()" method="post">
           <div class="heading">
             <h2>ENIAC'22</h2>
           </div>
@@ -34,34 +33,34 @@
           <div class="actual-form">
             <div class="input-wrap">
               <b><span class="formerror"></span></b>
-              <input type="text" name="name" class="input-field" id="name" autocomplete="off">
-              <label for="">Name<span class="required">*</span></label>
+              <input type="text" name="name" class="input-field" id="name">
+              <label for="name">Name<span class="required">*</span></label>
             </div>
 
             <div class="input-wrap">
               <b><span class="formerror"></span></b>
-              <input type="text" name="StdNo" class="input-field" autocomplete="off" id="studentno">
-              <label for="">Student No.<span class="required">*</span></label>
+              <input type="text" name="stdno" class="input-field" id="studentno">
+              <label for="stdno">Student No.<span class="required">*</span></label>
             </div>
 
             <div class="input-wrap">
-              <select name="branch" class="input-field" autocomplete="off" required>
+              <select name="branch" class="input-field" required>
                 <option value="" disabled selected hidden>Branch<span class="required">*</span></option>
                 <option value="CSE">CSE</option>
                 <option value="CS">CS</option>
-                <option value="CSE(AI&ML)">CSE(AI&ML)</option>
-                <option value="CS(DS)">CS(DS)</option>
+                <option value="AIML">CSE(AI&ML)</option>
+                <option value="DS">CS(DS)</option>
                 <option value="IT">IT</option>
-                <option value="CS&IT">CS&IT</option>
+                <option value="CSIT">CS&IT</option>
                 <option value="ECE">ECE</option>
                 <option value="EN">EN</option>
                 <option value="ME">ME</option>
-                <option value="Civil">Civil</option>
+                <option value="CVL">Civil</option>
               </select>
             </div>
 
             <div class="input-wrap">
-              <select name="section" class="input-field" autocomplete="off" required>
+              <select name="section" class="input-field" required>
                 <option value="" disabled selected hidden>Section<span class="required">*</span></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -71,21 +70,20 @@
 
             <div class="input-wrap">
               <b><span class="formerror"></span></b>
-              <input type="email" name="email" class="input-field" id="email" autocomplete="off">
-              <label for="">Email<span class="required">*</span></label>
+              <input type="email" name="email" class="input-field" id="email">
+              <label for="email">Email<span class="required">*</span></label>
             </div>
 
             <div class="input-wrap">
-              <select name="gender" class="input-field" autocomplete="off" required>
+              <select name="gender" class="input-field" required>
                 <option value="" disabled selected hidden>Gender<span class="required">*</span></option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
-                <option value="Other">Other</option>
               </select>
             </div>
 
             <div class="input-wrap">
-              <select name="hostel" class="input-field" autocomplete="off" required>
+              <select name="hostel" class="input-field" required>
                 <option value="" disabled selected hidden>Hosteller<span class="required">*</span></option>
                 <option value="YES">YES</option>
                 <option value="NO">NO</option>
@@ -93,16 +91,17 @@
             </div>
 
             <div class="input-wrap">
-              <select name="designer" class="input-field" autocomplete="off" required>
-                <option value="" disabled selected hidden>Designer<span class="required">*</span></option>
-                <option value="YES">YES</option>
-                <option value="NO">NO</option>
+              <select name="roll" class="input-field" required>
+                <option value="" disabled selected hidden>Roll<span class="required">*</span></option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="both">Both</option>
               </select>
             </div>
 
             <div class="input-wrap">
-              <input type="text" name="roll" class="input-field" autocomplete="off">
-              <label for="">Unstop Username<span class="required">*</span></label>
+              <input type="text" name="unstop" class="input-field">
+              <label for="unstop">Unstop Username<span class="required">*</span></label>
             </div>
 
             <div class="captcha">
