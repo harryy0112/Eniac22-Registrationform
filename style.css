@@ -31,7 +31,7 @@ main {
   max-width: 1020px;
   height: 950px;
   background-color: rgb(242, 242, 242);
-  border-radius: 3.3rem;
+  border-radius: 2rem;
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
 
@@ -195,6 +195,7 @@ label {
 }
 
 .image {
+  padding: 0.8rem;
   width: 100%;
   top: auto;
   opacity: 1;
@@ -271,8 +272,11 @@ label {
     transition: transform 0.8s ease-in-out, opacity 0.45s linear;
   }
 
+  .logo {
+    margin: 1.2rem 0 0.2rem 0;
+  }
   .heading {
-    margin: 0.5rem 0 1rem 0;
+    margin-bottom: 1rem;
   }
 
   .carousel {
